@@ -1,0 +1,12 @@
+package com.info.inher;
+
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+B b1= new B(12,56,24,89,54);
+b1.show();
+b1.hashCode();
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.info;
+
+public class JavaInterfaceEx implements IntEx {
+@override
+	public void sayHello() {
+		// TODO Auto-generated method stub
+		System.out.println("welcome to interface");
+	}
+public static void main(String[] args) {
+	IntEx i=new JavaInterfaceEx();
+System.out.println(i.i);
+i.sayHello();
+}
+}

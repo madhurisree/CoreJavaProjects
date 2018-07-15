@@ -1,0 +1,10 @@
+package com.info2;
+
+public class InstanceIntializerBlock {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

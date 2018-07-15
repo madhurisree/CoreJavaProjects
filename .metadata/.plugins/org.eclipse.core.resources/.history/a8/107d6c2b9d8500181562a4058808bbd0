@@ -1,0 +1,19 @@
+package com.info;
+
+public class B extends A {
+int a;
+float b;
+B(int p, float q){
+	a=p;
+	super.b=q;
+}
+void show(){
+	System.out.println("b in super class :"+super.b);
+	System.out.println("a in sub class :"+a);
+}
+public static void main(String[] args) {
+	B subObj=new B(12,23);
+	subObj.show();
+	
+}
+}

@@ -1,0 +1,19 @@
+package com.info.inher;
+
+public class B extends A {
+int d;
+	B(int l, int m, int n, int o) {
+		super(l, m, n);
+		// TODO Auto-generated constructor stub
+		d=o;
+		
+	}
+	void show(){
+		System.out.println("A value :"+a);
+		System.out.println("B value :"+b);
+		System.out.println("C value :"+c);
+		System.out.println("D value :"+d);
+	}
+	
+
+}

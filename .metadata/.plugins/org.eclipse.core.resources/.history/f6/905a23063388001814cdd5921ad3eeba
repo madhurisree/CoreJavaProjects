@@ -1,0 +1,14 @@
+package com.info1;
+
+public class Car extends Vechicle {
+Car(){
+	super();
+	System.out.println("subclass is invoked");
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Car c=new Car();
+
+	}
+
+}

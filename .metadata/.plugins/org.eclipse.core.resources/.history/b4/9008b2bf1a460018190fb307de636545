@@ -1,0 +1,26 @@
+package com.info;
+
+public class InstanceVariable {
+	public String name;
+	private double salary;
+	InstanceVariable(String ename){
+		name=ename;
+	}
+	public void setSalary(double esalary){
+		salary=esalary;
+	}
+	public void display(){
+		System.out.println("the employee name :"+name);
+		System.out.println("the employee salary :"+salary);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InstanceVariable in=new InstanceVariable("sreenuMadhuri");
+		in.setSalary(80000);
+		in.display();
+
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.info;
+
+public class Employee {
+	int empId;
+	String empName;
+	static String comName="sreenumadhuri pvt india ltd.";
+	Employee(int id, String name){
+		empId=id;
+		empName=name;
+	}
+	public void display(){
+		System.out.println( "Employee name :"+empName+"Employee Id :"+empId+"company name :"+comName);
+	}
+	public static void main(String[] args) {
+		Employee e1=new Employee(101, "Sreenu Madhuri");
+		Employee e2=new Employee(102, "Chandra");
+		Employee e3=new Employee(103, "Hemanth");
+	}
+
+}

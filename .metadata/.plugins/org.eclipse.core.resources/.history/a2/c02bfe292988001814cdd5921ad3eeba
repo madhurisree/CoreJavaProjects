@@ -1,0 +1,24 @@
+package com.info;
+
+public class Point {
+	int x;
+	int y;
+	Point(int x, int y){
+		x=x;
+		y=y;
+		
+	}
+	public void display(){
+		System.out.println(x + y);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Point p=new Point(101,102);
+		Point p1=new Point(103,104);
+		p.display();
+		p1.display();
+
+	}
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean id="product1" class="com.ecommerce.bean.Product">
+	<property name="productId" value="4001"></property>
+	<property name="productName" value="keyboard"></property>
+	<property name="price" value="400"></property>
+	</bean>
+	<bean id="shoppingCart" class="com.ecommerce.bean.ShoppingCart">
+	<property name="products"> 
+	<list>
+	<ref bean="product1"/></list>
+	</property>
+	</bean>
+	<bean>
+	<bean id="cashier" class="com.ecommerce.bean.Cashier">
+	 <constructor-arg index="0" value="F://spring/"/>
+	<constructor-arg index="1" value="productsInformation"/>
+	 
+	</bean>
+	-->
+</beans>

@@ -1,0 +1,42 @@
+package com.info;
+
+public class Employee {
+	int empId;//int intial value is 0
+	String empName;//String intial value is null
+	static String comName="sreenumadhuri pvt india ltd.";
+	static{
+		System.out.println("company name :"+comName);
+		//It is executed before main method at the time of classloading.
+//A static block helps to initialize the static data members, just like constructors help to initialize instance members
+
+	}
+	static void change(){//A static method cannot refer this or super keyword anyway
+		comName="Raju company ltd.";
+		System.out.println("comName :"+comName);
+	}
+	Employee(int id, String name){
+		empId=id;
+		empName=name;
+	}
+	public void display(){
+		change();
+		System.out.println( "Employee name :"+empName+"Employee Id :"+empId);
+	}
+	public static void main(String[] args) {
+		Employee e1=new Employee(101, "Sreenu Madhuri");
+		Employee e2=new Employee(102, "Chandra");
+		Employee e3=new Employee(103, "Hemanth");
+		//here static value creates single copy and shared to multiple instances
+		
+		e1.display();
+		e2.display();
+		e3.display();
+	}
+
+}
+/*It is a variable which belongs to the class and not to object(instance)
+Static variables are initialized only once , at the start of the execution . These variables will be initialized first, before the initialization of any instance variables
+A single copy to be shared by all instances of the class
+A static variable can be accessed directly by the class name and doesn’t need any object
+
+*/

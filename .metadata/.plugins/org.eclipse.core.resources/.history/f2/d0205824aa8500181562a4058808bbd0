@@ -1,0 +1,10 @@
+package com.info;
+
+public class Animal {
+static void testClassMethod(){
+	System.out.println("the class :"+"the static method in animal");
+}
+ void instanceMethod(){
+	System.out.println("the instance :"+"the instance method called in animal");
+}
+}

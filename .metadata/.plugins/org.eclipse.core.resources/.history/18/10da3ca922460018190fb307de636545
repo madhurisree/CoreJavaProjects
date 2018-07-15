@@ -1,0 +1,21 @@
+package com.info;
+
+public class IfCondition {
+	public void applyBrakes(){
+		boolean isMoving = false;
+		if(isMoving){
+			int currentSpeed = 57;
+			currentSpeed--;
+			System.out.println(currentSpeed);
+		}
+		}
+		
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		IfCondition i=new IfCondition();
+	//System.out.printf("speed: ",i.applyBrakes());
+
+	}
+
+}

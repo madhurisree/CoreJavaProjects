@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ClasstestService WSDL service -->
+
+  <service name="Classtest" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://info.com"/>
+      <parameter name="wsdlServiceElement" value="ClasstestService"/>
+      <parameter name="schemaQualified" value="http://info.com"/>
+      <parameter name="wsdlServicePort" value="Classtest"/>
+      <parameter name="className" value="com.info.Classtest"/>
+      <parameter name="wsdlPortType" value="Classtest"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://info.com" xmlns:retNS="http://info.com" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="calc" qname="operNS:calc" returnQName="retNS:calcReturn" returnType="rtns:string" soapAction="">
+        <parameter xmlns:pns="http://info.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:i" type="tns:int"/>
+        <parameter xmlns:pns="http://info.com" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:j" type="tns:int"/>
+      </operation>
+      <parameter name="allowedMethods" value="calc"/>
+
+  </service>
+</deployment>

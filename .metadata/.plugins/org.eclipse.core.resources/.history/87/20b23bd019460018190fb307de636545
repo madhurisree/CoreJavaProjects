@@ -1,0 +1,17 @@
+package com.info;
+
+public class InstanceVariable {
+	public String name;
+	private double salary;
+	InstanceVariable(String ename){
+		name=ename;
+	}
+	p
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

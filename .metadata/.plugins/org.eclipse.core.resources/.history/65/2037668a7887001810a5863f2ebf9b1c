@@ -1,0 +1,8 @@
+package com.info;
+
+public class A {
+static{
+	System.out.println("welcome");
+	System.exit(0);
+}
+}
